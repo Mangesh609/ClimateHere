@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:climatehere/services/loading.dart';
+import 'package:native_notify/native_notify.dart';
 
 void main(){
+  WidgetsFlutterBinding.ensureInitialized();
+  NativeNotify.initialize(1415, 'LzgvMprbpgN67j7WHovCWj', null, null);
   runApp(
     MaterialApp(
       home:Main() ,
